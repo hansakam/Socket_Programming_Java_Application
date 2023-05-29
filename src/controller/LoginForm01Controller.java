@@ -4,5 +4,5 @@
  */
 package controller;
 
-public class LoginFormController {
+public class LoginForm01Controller {
 }

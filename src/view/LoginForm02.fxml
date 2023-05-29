@@ -14,7 +14,8 @@
       <Pane prefHeight="37.0" prefWidth="440.0" styleClass="header" stylesheets="@style/css.css">
          <children>
             <Label layoutX="192.0" layoutY="9.0" text="Live Chat" />
-         </children></Pane>
+         </children>
+      </Pane>
       <JFXTextField alignment="CENTER" layoutX="156.0" layoutY="114.0" prefHeight="25.0" prefWidth="198.0" promptText="name" unFocusColor="#0b29bc">
          <font>
             <Font name="System Italic" size="11.0" />
