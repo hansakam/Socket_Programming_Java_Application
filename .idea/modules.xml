@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Client01/Client01.iml" filepath="$PROJECT_DIR$/Client01/Client01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Client02/Client02.iml" filepath="$PROJECT_DIR$/Client02/Client02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Client03/Client03.iml" filepath="$PROJECT_DIR$/Client03/Client03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NetWorkGroupChatModule.iml" filepath="$PROJECT_DIR$/NetWorkGroupChatModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Server/Server.iml" filepath="$PROJECT_DIR$/Server/Server.iml" />
+    </modules>
+  </component>
+</project>

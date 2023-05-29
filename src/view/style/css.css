@@ -1,0 +1,49 @@
+/*      LoginForm Styles    */
+
+.header{
+   -fx-background-color: #BDBDBD;
+}
+/*.closebtn{
+   -fx-background-color: red;
+   -fx-background-radius: 90;
+}
+.maxbtn{
+   -fx-background-color: green;
+   -fx-background-radius: 90;
+}
+.minibtn{
+   -fx-background-color: yellow;
+   -fx-background-radius: 90;
+}*/
+.loginbtn{
+   -fx-background-radius: 40;
+   -fx-background-color: linear-gradient(to right top, #283593, #1565C0, #0288D1, #26C6DA, #4FC3F7);
+   -fx-text-fill: white;
+   -fx-font-size: 11px;
+   -fx-font-weight:bold;
+}
+.label{
+   -fx-text-fill: #283593;
+   -fx-font-weight: bold;
+   -fx-font-size: 13;
+}
+
+
+
+
+/*       ClientForm Style       */
+
+
+.oneheader{
+   -fx-background-color: #BDBDBD;
+}
+.namelabel{
+   -fx-text-fill: #283593;
+   -fx-font-weight: bold;
+   -fx-font-size: 13;
+}
+.tfield{
+   -fx-background-radius: 50;
+}
+.send{
+}
