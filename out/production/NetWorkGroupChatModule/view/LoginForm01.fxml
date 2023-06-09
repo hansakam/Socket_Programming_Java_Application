@@ -15,7 +15,7 @@
          <children>
             <Label layoutX="192.0" layoutY="9.0" text="Live Chat" />
          </children></Pane>
-      <JFXTextField fx:id="txtcname" alignment="CENTER" layoutX="156.0" layoutY="114.0" prefHeight="25.0" prefWidth="198.0" promptText="name" unFocusColor="#0b29bc">
+      <JFXTextField fx:id="txtUserName" alignment="CENTER" layoutX="156.0" layoutY="114.0" prefHeight="25.0" prefWidth="198.0" promptText="name" unFocusColor="#0b29bc">
          <font>
             <Font name="System Italic" size="11.0" />
          </font>

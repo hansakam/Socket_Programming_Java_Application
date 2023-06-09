@@ -16,7 +16,7 @@ public class ServerFormController {
 
 
     public static void main(String[] args) throws IOException {
-        ServerSocket serverSocket = new ServerSocket(8000);
+        ServerSocket serverSocket = new ServerSocket(18000);
         Socket accept;
 
         while(true){
@@ -28,53 +28,7 @@ public class ServerFormController {
             clientHandler.start();
 
         }
-
-        //  server server = new server(serverSocket);
-        //  server.startServer();
-
-
     }
-
-
-    /*------------------------------OUT-------------------------------*/
-   /* public  server(ServerSocket serverSocket) {
-        this.serverSocket = serverSocket;
-    }
-
-    public void startServer() {
-
-        try {
-            while (!serverSocket.isClosed()) {
-                Socket socket = null;
-
-                socket = serverSocket.accept();
-
-                System.out.println("client has connectd");
-              //  ClientHandler clientHandler = new ClientHandler(socket);
-             //   Thread thread = new Thread(clientHandler);
-              //  thread.start();
-
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
-
-    public void closeServerSocket() {
-
-        try {
-            if (serverSocket != null) {
-                serverSocket.close();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-    }*/
-
-
 }
 
 

@@ -29,18 +29,12 @@ public class LoginForm01Controller {
         Stage stage = (Stage) txtUserName.getScene().getWindow();
         stage.close();
         Stage stage1 = new Stage();
-        stage1.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/ClientForm01.fxml"))));
+        stage1.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ClientForm01.fxml"))));
         stage1.setTitle("Online Chat ");
         stage1.setResizable(false);
         stage1.centerOnScreen();
         stage1.show();
 
-
-
-        /*name = txtcname.getText();
-        LoginFormPaneC1.getChildren().clear();
-        Stage stage = (Stage) LoginFormPaneC1.getScene().getWindow();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/ClientForm01.fxml"))));*/
 
     }
 
