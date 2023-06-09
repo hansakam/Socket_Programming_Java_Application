@@ -2,6 +2,7 @@ package initializer;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -16,8 +17,15 @@ public class client01 extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/LoginForm01.fxml"))));
-        primaryStage.setAlwaysOnTop(true);
+        Parent parent = FXMLLoader.load(this.getClass().getResource("../view/LoginForm01.fxml"));
+        Scene mainScene = new Scene(parent);
+        primaryStage.setTitle("Live Chat");
+        primaryStage.setScene(mainScene);
+        primaryStage.centerOnScreen();
         primaryStage.show();
+
+       /* primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/LoginForm01.fxml"))));
+        primaryStage.setAlwaysOnTop(true);
+        primaryStage.show();*/
     }
 }

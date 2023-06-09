@@ -15,19 +15,33 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class LoginForm01Controller {
+    public JFXTextField txtUserName;
     @FXML
     private AnchorPane LoginFormPaneC1;
 
-    @FXML
-    private JFXTextField txtcname;
+
     public static String name;
+    public static String userName;
 
     @FXML
     void btnloginonAction(ActionEvent event) throws IOException {
-        name = txtcname.getText();
+        userName =txtUserName.getText();
+        Stage stage = (Stage) txtUserName.getScene().getWindow();
+        stage.close();
+        Stage stage1 = new Stage();
+        stage1.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/ClientForm01.fxml"))));
+        stage1.setTitle("Online Chat ");
+        stage1.setResizable(false);
+        stage1.centerOnScreen();
+        stage1.show();
+
+
+
+        /*name = txtcname.getText();
         LoginFormPaneC1.getChildren().clear();
         Stage stage = (Stage) LoginFormPaneC1.getScene().getWindow();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/ClientForm01.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/ClientForm01.fxml"))));*/
+
     }
 
 }
