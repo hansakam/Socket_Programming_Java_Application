@@ -23,15 +23,17 @@ import javafx.stage.Stage;
 
 import java.io.*;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 
 public class ClientForm01Controller extends Thread{
    
     public VBox vBox;
-    public ImageView imgSendImages;
+
     public Label lblUser;
     public FileChooser chooser;
     public File path;
     public TextField txtTextField;
+    public ImageView imgSendImages;
     private Socket socket;
     private BufferedReader bufferedReader;
     private BufferedWriter bufferedWriter;
@@ -50,7 +52,7 @@ public class ClientForm01Controller extends Thread{
         lblUser.setText(userName);
 
         try {
-            socket = new Socket("localhost", 18000);
+            socket = new Socket("localhost", 16000);
             bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             printWriter = new PrintWriter(socket.getOutputStream(), true);
             this.start();
@@ -175,4 +177,20 @@ public class ClientForm01Controller extends Thread{
             e.printStackTrace();
         }
     }
+    public void mojOnAction(MouseEvent mouseEvent) {
+        if (mouseEvent.getSource() instanceof ImageView)  if (mouseEvent.getSource() instanceof ImageView) {
+            ImageView icon = (ImageView) mouseEvent.getSource();
+            switch (icon.getId()) {
+                case "imgSendImages1":
+                    //heart
+                    byte[] byte1 = {(byte) 0xE2, (byte) 0x9D, (byte) 0xA4};
+                    String emoji1AsString = new String(byte1, StandardCharsets.UTF_8);
+                    txtTextField.appendText(emoji1AsString);
+                    break;
+            }
+        }
+
+    }
+
+
 }

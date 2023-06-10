@@ -16,7 +16,7 @@ public class ServerFormController {
 
 
     public static void main(String[] args) throws IOException {
-        ServerSocket serverSocket = new ServerSocket(18000);
+        ServerSocket serverSocket = new ServerSocket(16000);
         Socket accept;
 
         while(true){
